@@ -1,0 +1,703 @@
+/* =====================================
+   CONFIGURAÇÕES GERAIS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #ffffff;
+
+    color: #111111;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+
+/* =====================================
+   CABEÇALHO
+===================================== */
+
+header {
+    width: 100%;
+    height: 100px;
+
+    background-color: #d9d9d9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 65px 0 8px;
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.logo-area {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.logo-area img {
+    width: 195px;
+
+    height: auto;
+
+    display: block;
+}
+
+.logo-area p {
+    font-size: 14px;
+
+    font-weight: 500;
+
+    margin-top: -1px;
+
+    color: #111111;
+}
+
+
+/* =====================================
+   MENU DO CABEÇALHO
+===================================== */
+
+.menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 55px;
+}
+
+
+/* =====================================
+   CARRINHO
+===================================== */
+
+.carrinho {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 36px;
+
+    line-height: 1;
+}
+
+.carrinho span {
+    font-size: 23px;
+
+    margin-top: 5px;
+
+    color: #111111;
+}
+
+
+/* =====================================
+   USUÁRIO
+===================================== */
+
+.usuario {
+    width: 40px;
+
+    height: 55px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.cabeca {
+    width: 14px;
+
+    height: 14px;
+
+    border: 1.5px solid #111111;
+
+    border-radius: 50%;
+
+    margin-bottom: 6px;
+}
+
+.corpo {
+    width: 34px;
+
+    height: 15px;
+
+    border: 1.5px solid #111111;
+
+    border-radius: 18px 18px 8px 8px;
+}
+
+
+/* =====================================
+   CONTEÚDO PRINCIPAL
+===================================== */
+
+main {
+    width: 100%;
+
+    padding-top: 42px;
+}
+
+
+/* =====================================
+   TÍTULO
+===================================== */
+
+h1 {
+    text-align: center;
+
+    font-size: 27px;
+
+    font-weight: 400;
+
+    line-height: 1.25;
+
+    color: #111111;
+
+    margin-bottom: 88px;
+}
+
+
+/* =====================================
+   BARRA DE PESQUISA
+===================================== */
+
+.pesquisa {
+    width: 81%;
+
+    max-width: 745px;
+
+    height: 67px;
+
+    margin: 0 auto;
+
+    background-color: #d9d9d9;
+
+    border-radius: 23px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 7px 10px;
+}
+
+
+/* =====================================
+   LUPA
+===================================== */
+
+.lupa {
+    width: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 43px;
+
+    color: #000000;
+
+    transform: rotate(-20deg);
+}
+
+
+/* =====================================
+   CAMPO DE PESQUISA
+===================================== */
+
+.pesquisa input {
+    flex: 1;
+
+    height: 51px;
+
+    border: none;
+
+    outline: none;
+
+    background-color: #ffffff;
+
+    border-radius: 30px;
+
+    padding: 0 20px;
+
+    font-size: 21px;
+
+    color: #111111;
+}
+
+.pesquisa input::placeholder {
+    color: #999999;
+}
+
+
+/* =====================================
+   CARROSSEL DE PLATAFORMAS
+===================================== */
+
+.plataformas {
+    width: 100%;
+
+    overflow: hidden;
+
+    margin-top: 84px;
+
+    position: relative;
+}
+
+
+/* =====================================
+   FAIXA QUE SE MOVE
+===================================== */
+
+.track {
+    display: flex;
+
+    width: max-content;
+
+    animation: passarLogos 24s linear infinite;
+
+    will-change: transform;
+}
+
+
+/* =====================================
+   GRUPOS DE LOGOS
+===================================== */
+
+.grupo-logos {
+    display: flex;
+
+    gap: 27px;
+
+    flex-shrink: 0;
+
+    /*
+       Esse espaço é importante.
+       Ele separa o Epic Games do próximo Xbox.
+    */
+    margin-right: 27px;
+}
+
+
+/* =====================================
+   QUADRADOS DAS PLATAFORMAS
+===================================== */
+
+.plataforma {
+    width: 135px;
+
+    height: 121px;
+
+    flex-shrink: 0;
+
+    background-color: #d9d9d9;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    transition: background-color 0.2s ease;
+}
+
+
+/* =====================================
+   LOGOS
+===================================== */
+
+.plataforma img {
+    width: 78%;
+
+    height: 78%;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition: transform 0.25s ease;
+}
+
+
+/* =====================================
+   EFEITO HOVER
+===================================== */
+
+.plataforma:hover {
+    background-color: #cccccc;
+}
+
+.plataforma:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =====================================
+   ANIMAÇÃO DO CARROSSEL
+===================================== */
+
+@keyframes passarLogos {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-33.333333% - 9px));
+    }
+
+}
+
+
+/* =====================================
+   BOTÕES
+===================================== */
+
+.botoes {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 55px;
+
+    padding: 0 20px 50px;
+}
+
+
+/* =====================================
+   ESTILO DOS BOTÕES
+===================================== */
+
+.botoes button {
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #d9d9d9;
+
+    color: #111111;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+/* =====================================
+   HOVER DOS BOTÕES
+===================================== */
+
+.botoes button:hover {
+    background-color: #222222;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =====================================
+   CLIQUE
+===================================== */
+
+.botoes button:active {
+    transform: scale(0.97);
+}
+
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 700px) {
+
+    header {
+        height: 90px;
+
+        padding: 0 20px 0 10px;
+    }
+
+
+    .logo-area img {
+        width: 150px;
+    }
+
+
+    .logo-area p {
+        font-size: 11px;
+    }
+
+
+    .menu {
+        gap: 20px;
+    }
+
+
+    .carrinho {
+        font-size: 28px;
+    }
+
+
+    .carrinho span {
+        font-size: 15px;
+    }
+
+
+    .usuario {
+        transform: scale(0.85);
+    }
+
+
+    h1 {
+        font-size: 23px;
+
+        margin-bottom: 60px;
+    }
+
+
+    .pesquisa {
+        width: 90%;
+    }
+
+
+    .pesquisa input {
+        font-size: 17px;
+    }
+
+
+    .plataformas {
+        margin-top: 60px;
+    }
+
+
+    .plataforma {
+        width: 115px;
+
+        height: 105px;
+    }
+
+
+    .grupo-logos {
+        gap: 20px;
+
+        margin-right: 20px;
+    }
+
+
+    .botoes {
+        flex-direction: column;
+
+        margin-top: 45px;
+    }
+
+
+    .botoes button {
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+}
+
+
+/* =====================================
+   CELULAR PEQUENO
+===================================== */
+
+@media (max-width: 450px) {
+
+    header {
+        padding-right: 15px;
+    }
+
+
+    .logo-area img {
+        width: 125px;
+    }
+
+
+    .logo-area p {
+        font-size: 9px;
+    }
+
+
+    .menu {
+        gap: 10px;
+    }
+
+
+    .carrinho {
+        font-size: 23px;
+    }
+
+
+    .carrinho span {
+        font-size: 12px;
+    }
+
+
+    h1 {
+        font-size: 21px;
+
+        margin-bottom: 45px;
+    }
+
+
+    .pesquisa {
+        width: 92%;
+
+        height: 60px;
+    }
+
+
+    .pesquisa input {
+        height: 46px;
+
+        font-size: 15px;
+    }
+
+
+    .lupa {
+        width: 45px;
+
+        font-size: 35px;
+    }
+
+
+    .plataformas {
+        margin-top: 50px;
+    }
+
+
+    .plataforma {
+        width: 105px;
+
+        height: 95px;
+    }
+
+
+    .grupo-logos {
+        gap: 15px;
+
+        margin-right: 15px;
+    }
+
+}
+
+.plataformas {
+    width: 100%;
+
+    overflow: hidden;
+
+    margin-top: 84px;
+
+    position: relative;
+}
+
+.track {
+    display: flex;
+
+    width: max-content;
+
+    animation: passarLogos 24s linear infinite;
+
+    will-change: transform;
+}
+
+.grupo-logos {
+    display: flex;
+
+    gap: 27px;
+
+    flex-shrink: 0;
+
+    margin-right: 27px;
+}
+
+.plataforma {
+    width: 135px;
+    height: 121px;
+
+    flex-shrink: 0;
+
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.plataforma img {
+    width: 78%;
+    height: 78%;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition: transform 0.25s ease;
+}
+
+.plataforma:hover {
+    background-color: transparent;
+}
+
+.plataforma:hover img {
+    transform: scale(1.08);
+}
+
+@keyframes passarLogos {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-33.333333% - 9px));
+    }
+
+}

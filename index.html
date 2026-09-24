@@ -1,17 +1,230 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciador de jogos</title>
+
+    <title>Gerenciador de Jogos</title>
+
     <link rel="stylesheet" href="css.css">
 </head>
+
 <body>
-    <h1>Gerencie seus jogos com os melhores preços</h1>
-    <button onclick="addJogo()">Adicionar jogo ao carrinho</button>
-    <button onclick="showJogos()">Mostrar todos os jogos</button>
-    <button onclick="encontrarJogo()">Buscar um jogo pelo nome</button>
-    <button onclick="deletarJogoPeloId()">Excluir um jogo pelo id</button>
+
+    <!-- =====================================
+         CABEÇALHO
+    ====================================== -->
+
+    <header>
+
+        <div class="logo-area">
+
+            <img src="Imagens/logo-ludora.png" alt="Logo Ludora">
+
+        </div>
+
+
+        <div class="menu">
+
+            <div class="carrinho">
+
+                🛒
+
+                <span>Carrinho</span>
+
+            </div>
+
+
+            <div class="usuario">
+
+                <div class="cabeca"></div>
+
+                <div class="corpo"></div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================
+         CONTEÚDO PRINCIPAL
+    ====================================== -->
+
+    <main>
+
+        <!-- TÍTULO -->
+
+        <h1>
+            Gerencie seus jogos com os melhores<br>
+            preços
+        </h1>
+
+
+        <!-- =====================================
+             BARRA DE PESQUISA
+        ====================================== -->
+
+        <div class="pesquisa">
+
+            <span class="lupa">⌕</span>
+
+            <span class="texto-pesquisa">
+                Digite o nome do console aqui
+            </span>
+
+        </div>
+
+
+        <!-- =====================================
+             CARROSSEL DE PLATAFORMAS
+        ====================================== -->
+
+        <div class="plataformas">
+
+            <div class="track">
+
+
+                <!-- =================================
+                     GRUPO 1
+                ================================== -->
+
+                <div class="grupo-logos">
+
+                    <div class="plataforma">
+                        <img src="Imagens/Xbox.webp" alt="Xbox">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/Playstation.webp" alt="PlayStation">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/Nintendo.svg" alt="Nintendo">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/PC.png" alt="PC">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/Steam.png" alt="Steam">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/epic.webp" alt="Epic Games">
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     GRUPO 2
+                ================================== -->
+
+                <div class="grupo-logos">
+
+                    <div class="plataforma">
+                        <img src="Imagens/xbox.webp" alt="Xbox">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/Playstation.webp" alt="PlayStation">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/Nintendo.svg" alt="Nintendo">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/PC.png" alt="PC">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/Steam.png" alt="Steam">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/epic.webp" alt="Epic Games">
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     GRUPO 3
+                ================================== -->
+
+                <div class="grupo-logos">
+
+                    <div class="plataforma">
+                        <img src="Imagens/xbox.webp" alt="Xbox">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/Playstation.webp" alt="PlayStation">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/Nintendo.svg" alt="Nintendo">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/PC.png" alt="PC">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/Steam.png" alt="Steam">
+                    </div>
+
+                    <div class="plataforma">
+                        <img src="Imagens/epic.webp" alt="Epic Games">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             BOTÕES DO SISTEMA
+        ====================================== -->
+
+        <div class="botoes">
+
+            <button onclick="addJogo()">
+                Adicionar jogo ao carrinho
+            </button>
+
+            <button onclick="showJogo()">
+                Mostrar todos os jogos
+            </button>
+
+            <button onclick="encontrarJogo()">
+                Buscar um jogo pelo nome
+            </button>
+
+            <button onclick="deletarPeloId()">
+                Excluir um jogo pelo ID
+            </button>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="script.js"></script>
+
 </body>
-<script src="script.js"></script>
+
 </html>
