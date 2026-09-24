@@ -19,29 +19,19 @@
     <header>
 
         <div class="logo-area">
-
             <img src="Imagens/logo-ludora.png" alt="Logo Ludora">
-
         </div>
-
 
         <div class="menu">
 
             <div class="carrinho">
-
                 🛒
-
                 <span>Carrinho</span>
-
             </div>
 
-
             <div class="usuario">
-
                 <div class="cabeca"></div>
-
                 <div class="corpo"></div>
-
             </div>
 
         </div>
@@ -71,9 +61,11 @@
 
             <span class="lupa">⌕</span>
 
-            <span class="texto-pesquisa">
-                Digite o nome do console aqui
-            </span>
+            <input
+                type="text"
+                id="campoPesquisa"
+                placeholder="Digite o nome do console aqui"
+            >
 
         </div>
 
@@ -87,9 +79,7 @@
             <div class="track">
 
 
-                <!-- =================================
-                     GRUPO 1
-                ================================== -->
+                <!-- GRUPO 1 -->
 
                 <div class="grupo-logos">
 
@@ -120,14 +110,12 @@
                 </div>
 
 
-                <!-- =================================
-                     GRUPO 2
-                ================================== -->
+                <!-- GRUPO 2 -->
 
                 <div class="grupo-logos">
 
                     <div class="plataforma">
-                        <img src="Imagens/xbox.webp" alt="Xbox">
+                        <img src="Imagens/Xbox.webp" alt="Xbox">
                     </div>
 
                     <div class="plataforma">
@@ -153,14 +141,12 @@
                 </div>
 
 
-                <!-- =================================
-                     GRUPO 3
-                ================================== -->
+                <!-- GRUPO 3 -->
 
                 <div class="grupo-logos">
 
                     <div class="plataforma">
-                        <img src="Imagens/xbox.webp" alt="Xbox">
+                        <img src="Imagens/Xbox.webp" alt="Xbox">
                     </div>
 
                     <div class="plataforma">
@@ -184,7 +170,6 @@
                     </div>
 
                 </div>
-
 
             </div>
 
@@ -197,24 +182,42 @@
 
         <div class="botoes">
 
-            <button onclick="addJogo()">
+            <!-- RF01 -->
+            <button type="button" onclick="addJogo()">
                 Adicionar jogo ao carrinho
             </button>
 
-            <button onclick="showJogo()">
+            <!-- RF03 -->
+            <button type="button" onclick="showJogo()">
                 Mostrar todos os jogos
             </button>
 
-            <button onclick="encontrarJogo()">
+            <!-- RF04 -->
+            <button type="button" onclick="encontrarJogo()">
                 Buscar um jogo pelo nome
             </button>
 
-            <button onclick="deletarPeloId()">
+            <!-- RF02 -->
+            <button type="button" onclick="deletarPeloId()">
                 Excluir um jogo pelo ID
             </button>
 
-        </div>
+            <!-- RF05 -->
+            <button type="button" onclick="removerUltimo()">
+                Remover último jogo
+            </button>
 
+            <!-- RF06 -->
+            <button type="button" onclick="limparTudo()">
+                Limpar todos os jogos
+            </button>
+
+            <!-- RF07 -->
+            <button type="button" onclick="mostrarTotal()">
+                Mostrar total de jogos
+            </button>
+
+        </div>
 
     </main>
 
